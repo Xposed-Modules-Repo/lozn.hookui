@@ -90,7 +90,8 @@ qq 35068264的qq空间可以翻找说说，我有时会会把加群图片放在Q
 
 电报 : https://t.me/qssq666
 简书 https://www.jianshu.com/nb/24436393
-博客 http://lozn.top
+博客 http://blog.lozn.top
+邮箱 x@lozn.top
 
 ## 联系我
 
@@ -113,6 +114,7 @@ email:qssq521@gmail.com
 alipay:qssq521@gmail.com
 
 qq:35068264
-https://lozn.top/about
+http://blog.lozn.top/about
  
-
+# More Software
+please access https://t.me/qssq666
