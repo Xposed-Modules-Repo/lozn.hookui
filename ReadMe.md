@@ -1,4 +1,6 @@
 # 简介
+## 下载地址
+https://github.com/Xposed-Modules-Repo/lozn.hookui/blob/main/HOOKUI1.9.0_build_26-release.apk
 
 ## HOOKUI
 ### 是什么
