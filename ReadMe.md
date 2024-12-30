@@ -36,7 +36,7 @@ XposedBridge.hookMethod("android.view.View", "onTouchEvent", function(param, pha
 > 2.作者也曾经通过HOOKUI随性破解破解一些没什么验证的收费SE直播,倒计时自动关闭视频直接拦截对方法进行屏蔽的操作.也通过它直接改手机余额,来告诉那些拜金女小心骗子.
 
 > 3.作者因为对某些共享wifi软件没有记忆功能从而导致下次连接需要网络才能连接,还针对性的研发了wifi密码记忆功能.这样连一个记住一个还能看到密码
-![alt text]({E66C41D8-352A-4A54-8C0B-A31E40C8C3DA}.png)
+![alt text](pic.png)
 
 
 ### 支持的功能
