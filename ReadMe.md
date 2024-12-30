@@ -1,8 +1,5 @@
-# 简介
-## 下载地址
-https://github.com/Xposed-Modules-Repo/lozn.hookui/blob/main/HOOKUI1.9.0_build_26-release.apk
-
-## HOOKUI
+# HOOKUI
+有精简版和完整版，支持js 动态hook。
 ### 是什么
 是一款xposed插件,必须依赖xposed框架环境,root机环境有xposed framework,edposed,LSxposed,非root有virtual app,以及类似多开平行空间的一些软件 ,基于app直接修改植入xposed framework的有太极,还有我开发的神之手.[goodhand文档](http://goodhand.robot.top)
 它能快速跟踪一些行为从而找到破解的思路,就像window破解一样,也有类似的 如hook window api 的某些函数,hook io文件打开,注册表行为.而这个hookui也类似,对一些敏感行为可进行追踪拦截,可追踪调用堆栈
