@@ -1,8 +1,31 @@
 # HOOKUI
 有精简版和完整版，支持js 动态hook。
 ### 是什么
-是一款xposed插件,必须依赖xposed框架环境,root机环境有xposed framework,edposed,LSxposed,非root有virtual app,以及类似多开平行空间的一些软件 ,基于app直接修改植入xposed framework的有太极,还有我开发的神之手.[goodhand文档](http://goodhand.robot.top)
-它能快速跟踪一些行为从而找到破解的思路,就像window破解一样,也有类似的 如hook window api 的某些函数,hook io文件打开,注册表行为.而这个hookui也类似,对一些敏感行为可进行追踪拦截,可追踪调用堆栈
+是一款xposed插件,必须依赖xposed框架环境,root机环境有LSxposed,xposed framework,edposed,,非root有virtual app,以及类似多开平行空间的一些软件 ,基于app直接修改植入xposed framework的有太极,还有我开发的神之手.[goodhand文档](http://goodhand.robot.top)
+它能快速跟踪一些行为从而找到破解的思路,就像window破解一样,也有类似的 如hook window api 的某些函数,hook io文件打开,注册表行为.而这个hookui也类似,对一些敏感行为可进行追踪拦截,可追踪调用堆栈,另外还支持hook 记忆，内存窥探，动态修改，还支持js hook
+1.9.0已经支持，但是由于作者资金不足，身体等各方面原因 已经放弃操作了1年,老版本的hook api作废，新版本将尽力保持和xposed api一样，这样减少学习成本。
+2024年12月重启项目，现在已经跑通的hook代码如下：
+```
+XposedBridge.hookMethod("android.view.View", "onTouchEvent", function(param, phase) {
+    if (phase === "before") {
+		
+		log.v("before");
+		var Arrays = Packages.java.util.Arrays;
+		let xparam= param.getArguments();
+		log.v(xparam);
+		    let args = param.getArguments();
+       log.v("onTouchEvent 调用前 ,ARG LEN:"+Arrays.toString(args));
+    
+     // args[0] = "Modified Arg";
+      param.setArguments(args);
+	    log.v("onTouchEvent 调用前 ,--------"+args.length);
+    } else if (phase === "after") {
+        log.v("onTouchEvent 调用堆栈"+ log.getStackTraceString());
+    }
+});
+
+```
+
 
 ![Screenshot_2023-02-25-22-02-29-358_lozn.hookui.jpg](https://upload-images.jianshu.io/upload_images/2815884-85b290b1580b5c66.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
