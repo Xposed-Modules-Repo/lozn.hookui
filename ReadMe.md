@@ -1,5 +1,15 @@
 # HOOKUI
 有精简版和完整版，支持js 动态hook。
+### 最近更新
+
+最近更新的版本在看雪论坛,支持 ai 玩法,能通过腾讯的codebuddy直接 言出法随的分析,无需学习成本,就能动态修改界面文字  写hook代码 .
+https://bbs.kanxue.com/thread-288882.htm
+<img width="480" height="895" alt="image" src="https://github.com/user-attachments/assets/5c6a6090-4cbd-4c22-ae82-682dd1d9e3a6" />
+
+<img width="1149" height="965" alt="image" src="https://github.com/user-attachments/assets/df5f85e4-fb5b-4909-9674-6875ef00b94b" />
+
+<img width="501" height="894" alt="image" src="https://github.com/user-attachments/assets/cc6d6db1-27a5-40f4-a40b-a46100a65302" />
+
 ### 是什么
 是一款xposed插件,必须依赖xposed框架环境,root机环境有LSxposed,xposed framework,edposed,,非root有virtual app,以及类似多开平行空间的一些软件 ,基于app直接修改植入xposed framework的有太极,还有我开发的神之手.[goodhand文档](http://goodhand.robot.top) （不再更新，篡改软件原理不推荐!不过在愿景来看可以对流氓软件做载入xposed内置的操作行为）
 它能快速跟踪一些行为从而找到破解的思路,就像window破解一样,也有类似的 如hook window api 的某些函数,hook io文件打开,注册表行为.而这个hookui也类似,对一些敏感行为可进行追踪拦截,可追踪调用堆栈,另外还支持hook 记忆，内存窥探，动态修改，还支持js hook
